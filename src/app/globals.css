@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  border-color: #252b3d;
+}
+
+body {
+  background: #0a0d14;
+  color: #eef0f6;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgb(99 102 241 / 0.4);
+}
+
+:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.card {
+  background: linear-gradient(160deg, #1a1f2e, #11151f);
+  border: 1px solid #252b3d;
+  border-radius: 1rem;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  border-color: rgb(99 102 241 / 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -20px rgb(0 0 0 / 0.6), 0 0 40px -16px rgb(99 102 241 / 0.3);
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-all active:scale-95 disabled:pointer-events-none disabled:opacity-50;
+}
+.btn-primary {
+  @apply btn bg-accent text-white hover:brightness-110;
+  box-shadow: 0 0 24px -6px rgb(99 102 241 / 0.5);
+}
+.btn-outline {
+  @apply btn border border-line bg-surface text-ink hover:border-accent/60;
+}
+
+.input {
+  @apply w-full rounded-xl border border-line bg-surface px-4 py-3 text-sm text-ink outline-none transition placeholder:text-muted/50 focus:border-accent/70;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-semibold;
+}
