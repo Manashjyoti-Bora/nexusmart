@@ -1,365 +1,136 @@
 <div align="center">
 
-<!-- ═══════════════════ HERO BANNER ═══════════════════ -->
+# 🛒 NexusMart
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:020617,20:1e3a8a,45:3b82f6,70:6366f1,100:06b6d4&height=280&section=header&text=Manashjyoti%20Bora&fontSize=54&fontColor=ffffff&animation=fadeIn&fontAlignY=32&desc=Full%20Stack%20Software%20Developer%20%E2%80%94%20React%20%E2%80%A2%20Next.js%20%E2%80%A2%20TypeScript%20%E2%80%A2%20Node.js&descSize=17&descAlignY=52)
+### Full-Stack E-Commerce Platform — Real Database · Real Auth · Real Checkout
 
-<!-- ═══════════════════ TYPING ANIMATION ═══════════════════ -->
+[![Live Demo](https://img.shields.io/badge/🔴_LIVE_DEMO-nexusmart--dusky.vercel.app-10b981?style=for-the-badge&logo=vercel&logoColor=white)](https://nexusmart-dusky.vercel.app)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-manashjyoti--bora.vercel.app-6366f1?style=for-the-badge)](https://manashjyoti-bora.vercel.app)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=38BDF8&center=true&vCenter=true&multiline=true&repeat=true&width=850&height=110&lines=%F0%9F%9A%80+Full+Stack+Software+Developer+%7C+Crafting+Modern+Web+Experiences;%E2%9A%A1+React+19+%E2%80%A2+Next.js+App+Router+%E2%80%A2+TypeScript+%E2%80%A2+Node.js+%E2%80%A2+MongoDB;%F0%9F%8E%AF+Clean+Architecture+%E2%80%A2+Performance+First+%E2%80%A2+Pixel-Perfect+UI;%E2%9C%A8+Open+to+Software+Developer+Internships+%26+Junior+Roles!)](https://manashjyoti-bora.vercel.app)
+![Next.js](https://img.shields.io/badge/Next.js_14-App_Router-000000?style=flat-square&logo=nextdotjs)
+![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![JWT](https://img.shields.io/badge/Auth-JWT_+_bcrypt-d63aff?style=flat-square)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Zod](https://img.shields.io/badge/Validation-Zod-3E67B1?style=flat-square)
 
-<!-- ═══════════════════ STATUS BADGES ═══════════════════ -->
+**Try it live:** create an account → add to cart → place an order. Everything works, everything persists.
 
-![Profile Views](https://komarev.com/ghpvc/?username=Manashjyoti-Bora&label=PROFILE+VIEWS&color=3b82f6&style=for-the-badge)
-[![Followers](https://img.shields.io/github/followers/Manashjyoti-Bora?label=FOLLOWERS&style=for-the-badge&color=6366f1&labelColor=0f172a)](https://github.com/Manashjyoti-Bora?tab=followers)
-![Open for Internship](https://img.shields.io/badge/OPEN_FOR-INTERNSHIP-10b981?style=for-the-badge&labelColor=0f172a)
-![Status](https://img.shields.io/badge/STATUS-AVAILABLE_NOW-22d3ee?style=for-the-badge&labelColor=0f172a)
-
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Live_Website-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://manashjyoti-bora.vercel.app)
-[![Email](https://img.shields.io/badge/📧_Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:manashjyotibora122@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manashjyoti-bora-323b97405)
-![Location](https://img.shields.io/badge/📍_Nagaon,_Assam-India_🇮🇳-f59e0b?style=for-the-badge&labelColor=0f172a)
+📱 *Engineered and deployed entirely from an Android phone (Termux + Git + Vercel + MongoDB Atlas).*
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
-<!-- ═══════════════════ INTRODUCTION ═══════════════════ -->
+## ✨ Features
 
-## 👨‍💻 Professional Introduction
+| Area | What's inside |
+|---|---|
+| 🛍️ **Catalog** | 8-product store with instant search + category filtering, SSG product detail pages |
+| 🛒 **Cart** | Optimistic updates, localStorage persistence, quantity controls, empty/success states |
+| 🔐 **Authentication** | Signup/login with **bcrypt hashing (12 rounds)**, **JWT in HTTP-only cookies** (XSS-safe), rate-limited login (10 attempts/10 min) |
+| 👤 **User Dashboard** | Protected route (server-side redirect), profile + full order history |
+| 💳 **Checkout** | Orders saved to MongoDB with **server-computed totals** — client price tampering is impossible |
+| 🛠️ **Admin Panel** | Role-gated (server redirect for non-admins): product create & delete via admin-only APIs |
+| ✅ **Validation** | Shared **Zod schemas on client AND server** — validation can never drift apart |
+| 🧯 **Demo Mode** | Runs with **zero configuration** (no DB needed); auto-switches to MongoDB when `MONGODB_URI` is set |
+| 🎨 **UI/UX** | Dark premium theme, fully responsive, accessible (labels, focus rings, aria), loading skeletons |
+| 🔒 **Security** | Security headers (HSTS, X-Frame DENY, nosniff), same-error login responses (no user enumeration) |
 
-<table>
-<tr>
-<td width="62%" valign="top">
+## 🏗️ Architecture
 
-I'm a **Full Stack Software Developer** from **Nagaon, Assam, India** 🇮🇳 who builds end-to-end web applications — from Figma-level UI polish to typed APIs and cloud deployment.
-
-**What I build:** Production-grade web apps with React 19, Next.js App Router, TypeScript and Node.js — dashboards, job portals, e-commerce platforms, and award-style portfolios. Every project is **deployed, documented and public**.
-
-**Current focus:** Full-stack system design, Node.js backends, and web performance optimization.
-
-**Career objective:** A Software Developer **internship or junior role** where I can ship real features, learn from senior engineers, and grow into a product-minded full-stack engineer.
-
-**Why hire me:**
-- 🚢 I ship complete products, not half-finished tutorials — 4+ live deployments
-- 🧠 Modern stack fluency: React 19, Next.js 14+, TypeScript, Tailwind, Node.js
-- 📱 Resourceful by nature — I engineered & deployed my entire portfolio **from an Android phone** using Termux, Git and Vercel
-- 🔍 100% of my code is public — my GitHub *is* my resume
-
-**Values:** Clean code · Ship real things · Learn in public · Mobile-first always
-
-**Fun fact:** My dev machine for this profile's portfolio was a phone. No laptop, no excuses. 😄
-
-</td>
-<td width="38%" valign="top">
-
-<img src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" width="100%" alt="Coding animation"/>
-
-<br/><br/>
-
-```yaml
-name: Manashjyoti Bora
-role: Full Stack Developer
-education: B.Voc Information Technology
-location: Nagaon, Assam, India (IST)
-languages: [English, Assamese, Hindi]
-open_to: [Internship, Junior Roles]
-remote: Ready ✅
+```
+src/
+├── app/
+│   ├── api/
+│   │   ├── auth/          # signup · login · logout · me  → JWT + bcrypt + rate limit
+│   │   ├── products/      # list (public) · create/delete (admin-gated)
+│   │   └── orders/        # history · place order (server-computed totals)
+│   ├── products/[slug]/   # SSG product pages with generateStaticParams
+│   ├── cart/              # optimistic cart + checkout flow
+│   ├── login/ · signup/   # shared AuthForm with client-side Zod
+│   ├── account/           # 🔒 protected — server-side session check
+│   └── admin/             # 🔒 role-gated — server redirect for non-admins
+├── components/            # navbar · product grid/card · auth form · admin panel
+└── lib/
+    ├── db.ts              # cached Mongoose connection (serverless-safe)
+    ├── models.ts          # User · Product · Order schemas
+    ├── auth.ts            # JWT sign/verify via jose, HTTP-only cookie session
+    ├── schemas.ts         # shared Zod validation (client + server)
+    └── cart-store.tsx     # React Context cart with localStorage persistence
 ```
 
-</td>
-</tr>
-</table>
+## 🔒 Security Decisions
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+- **Passwords:** bcrypt with 12 rounds — never stored in plain text
+- **Sessions:** JWT in HTTP-only, SameSite=Lax, Secure cookies — JavaScript can't read the token
+- **Login:** identical error for wrong email vs wrong password — prevents user enumeration
+- **Totals:** computed server-side from submitted items — client can't tamper with prices
+- **Rate limiting:** login capped at 10 attempts per 10 minutes per IP
+- **Validation:** every mutation validated with Zod on the server, even if the client already validated
+- **Headers:** HSTS, X-Frame-Options DENY, X-Content-Type-Options nosniff on every response
 
-<!-- ═══════════════════ ABOUT ME ═══════════════════ -->
+## 🚀 Quick Start
 
-## 🎯 About Me
+```bash
+# 1. Clone & install
+git clone https://github.com/Manashjyoti-Bora/nexusmart.git
+cd nexusmart
+npm install
 
-| | |
-|---|---|
-| 🎓 **Education** | B.Voc in Information Technology — Nagaon, Assam *(ongoing)* |
-| 🌱 **Currently Learning** | Full-Stack System Design · Microservices · Web Performance |
-| 💼 **Experience** | Self-driven developer — 4+ production apps designed, built & deployed solo |
-| ⚡ **Strengths** | Fast learner · UI/UX instinct · End-to-end ownership · Consistency |
-| 🎨 **Interests** | Creative frontend · Motion design · Developer tooling · Open source |
-| 🗺️ **Roadmap** | Internship → Junior Developer → Product-minded Full-Stack Engineer |
+# 2. Configure (OPTIONAL — runs in demo mode without it)
+cp .env.example .env.local
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+# 3. Run
+npm run dev          # http://localhost:3000
+```
 
-<!-- ═══════════════════ TECH STACK ═══════════════════ -->
+## 🔑 Environment Variables
 
-## 🛠️ Tech Stack & Tools
+| Variable | Required | Purpose |
+|---|---|---|
+| `MONGODB_URI` | No* | MongoDB Atlas connection string. Without it: **demo mode** (sample catalog, sessions work, no persistence) |
+| `JWT_SECRET` | Production | Long random string for signing tokens — `openssl rand -base64 32` |
+| `ADMIN_EMAIL` | No | The email that receives the **admin role** on signup |
 
-### ⚡ Frontend & Styling
-![Frontend](https://skillicons.dev/icons?i=react,nextjs,ts,js,html,css,tailwind,bootstrap,redux&theme=dark)
+## 🗄️ MongoDB Atlas Setup (free tier, ~10 min)
 
-### ⚙️ Backend, APIs & Databases
-![Backend](https://skillicons.dev/icons?i=nodejs,express,mongodb,firebase,supabase&theme=dark)
+1. [cloud.mongodb.com](https://cloud.mongodb.com) → Build a Database → **M0 FREE**
+2. Create a database user (save the password!)
+3. **Network Access** → Add IP → **0.0.0.0/0** (required for Vercel's dynamic IPs)
+4. **Connect → Drivers** → copy the connection string
+5. Replace `<db_password>` and insert the database name: `...mongodb.net/nexusmart?...`
+6. Add as `MONGODB_URI` in `.env.local` + Vercel env vars → redeploy
+7. First page load **auto-seeds** 8 demo products ✅
 
-### ☁️ Cloud, DevOps & Deployment
-![Cloud](https://skillicons.dev/icons?i=vercel,netlify,git,github,githubactions,linux&theme=dark)
+## ☁️ Deploy to Vercel
 
-### 🔧 Workflow, Build & Design Tools
-![Tools](https://skillicons.dev/icons?i=vscode,vite,npm,postman,figma&theme=dark)
+1. Push to GitHub
+2. [vercel.com](https://vercel.com) → Add New → Project → Import
+3. Add env vars: `MONGODB_URI`, `JWT_SECRET`, `ADMIN_EMAIL`
+4. Deploy — live in ~2 minutes 🚀
 
-<details>
-<summary><b>📋 Full stack breakdown (click to expand)</b></summary>
-<br/>
+## 🧪 Try the Admin Panel
 
-| Category | Technologies |
-|---|---|
-| **Frontend** | React 19, Next.js 14+ (App Router), TypeScript, JavaScript ES6+ |
-| **Styling** | Tailwind CSS, CSS3, Bootstrap, shadcn/ui, Responsive / Mobile-first |
-| **State Management** | Redux, React Hooks & Context |
-| **Backend & APIs** | Node.js, Express.js, REST APIs |
-| **Database & Auth** | MongoDB, Firebase, Supabase |
-| **DevOps & CI/CD** | Git, GitHub, GitHub Actions, Vercel auto-deployments |
-| **Deployment** | Vercel, Netlify, GitHub Pages |
-| **Testing & Debug** | Postman, Chrome DevTools, Lighthouse |
-| **AI Tools** | AI-assisted development, prompt engineering |
-| **Design** | Figma, UI animation (GSAP, Framer Motion, Three.js) |
-| **Build & Package** | Vite, npm, Next.js build pipeline |
-| **Environment** | Linux (Termux), VS Code |
+Sign up on the live site with the email set in `ADMIN_EMAIL` → a **🔧 Admin** button appears in the navbar → create/delete products and watch the catalog update live.
 
-</details>
+## 📚 What I Learned Building This
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+- **Serverless + Mongoose:** connection caching is mandatory — one connection per request melts Atlas
+- **Never trust the client:** totals, roles and validation all belong on the server
+- **HTTP-only cookies > localStorage** for tokens — XSS can't touch them
+- **Demo-mode fallbacks** make a portfolio project reviewable in seconds, without asking recruiters to set up a database
 
-<!-- ═══════════════════ FEATURED PROJECTS ═══════════════════ -->
-
-## 🚀 Featured Projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🌐 AUREA — Portfolio Website
-**⭐ Best & Latest Project** · `v1.0` · ✅ Live in Production
-
-[![Live Demo](https://img.shields.io/badge/🔴_LIVE_DEMO-Visit_Website-6366f1?style=for-the-badge)](https://manashjyoti-bora.vercel.app)
-[![Source](https://img.shields.io/badge/📂_SOURCE-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/Manashjyoti-Bora/portfolio-website)
-
-> Award-style premium developer portfolio — a full product, not a template.
-
-**Key Features:**
-- ✨ Three.js 3D particle hero + GSAP scroll choreography
-- ⌨️ ⌘K command palette, hidden terminal & easter eggs
-- 🤖 AI concierge chatbot + live GitHub dashboard
-- 🌗 Dark/Light themes with 5 accent palettes
-- 🔒 CSP/HSTS security headers, JSON-LD SEO, dynamic OG images
-- ♿ Accessibility-first: reduced-motion support, keyboard nav
-
-`Next.js 14` `TypeScript` `Tailwind` `GSAP` `Framer Motion` `Three.js`
-
-</td>
-<td width="50%" valign="top">
-
-### 💼 DevHire Pro — Job Portal & ATS
-**🧩 Most Complex Logic** · `v1.0` · ✅ Complete
-
-[![Source](https://img.shields.io/badge/📂_SOURCE-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/Manashjyoti-Bora/devhire-pro-ats)
-
-> Enterprise-grade applicant tracking system for tech recruitment.
-
-**Key Features:**
-- 🔍 Real-time multi-attribute filtering (keyword + skill + location)
-- 📊 Interactive application pipeline tracker
-- 🌓 Glassmorphic light/dark theme switching
-- ⚡ Memoized rendering — zero lag while filtering
-
-`React 19` `Vite` `JavaScript` `Lucide Icons` `Modern CSS`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🛒 NexusMart — Full-Stack E-Commerce
-**⚙️ Backend Powerhouse** · `v1.0` · ✅ Live in Production
-
-[![Live Demo](https://img.shields.io/badge/🔴_LIVE_DEMO-Visit_Store-10b981?style=for-the-badge)](https://nexusmart-dusky.vercel.app)
-[![Source](https://img.shields.io/badge/📂_SOURCE-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/Manashjyoti-Bora/nexusmart)
-
-> Complete online store proving the full stack: real database, real auth, real checkout — try it live.
-
-**Key Features:**
-- 🔐 JWT auth — bcrypt hashing, HTTP-only cookies, rate-limited login
-- 🗄️ MongoDB Atlas — users, products & orders (server-computed totals)
-- 🛒 Cart with optimistic updates, checkout & order history
-- 🛠️ Role-gated admin panel with product CRUD
-- ✅ Zod validation on client AND server
-
-`Next.js` `TypeScript` `Node.js` `MongoDB` `JWT` `Zod` `Tailwind`
-
-</td>
-<td width="50%" valign="top">
-
-### 📋 TaskFlow — Agile Kanban Suite
-**🎯 Cleanest State Design** · `v1.0` · ✅ Complete
-
-[![Source](https://img.shields.io/badge/📂_SOURCE-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/Manashjyoti-Bora/taskflow-enterprise)
-
-> Agile productivity suite with dynamic Kanban boards and sprint tracking.
-
-**Key Features:**
-- 📌 Dynamic stage columns: To Do → In Progress → Done
-- 🏷️ Live priority tagging (High / Medium / Low)
-- 🔄 Centralized state — every view syncs instantly
-- 🎨 Professional dark-themed dashboard
-
-`React` `JavaScript ES6+` `State Management` `CSS`
-
-</td>
-</tr>
-</table>
+---
 
 <div align="center">
 
-**➕ The journey:** Started with hand-coded vanilla HTML/CSS/JS in 2025 → shipping typed Next.js products in 2026. Proof of fundamentals 💪
+**Built with ❤️ (and a phone 📱) by [Manashjyoti Bora](https://manashjyoti-bora.vercel.app)**
 
-</div>
+[![GitHub](https://img.shields.io/badge/GitHub-Manashjyoti--Bora-181717?style=for-the-badge&logo=github)](https://github.com/Manashjyoti-Bora)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manashjyoti-bora-323b97405)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:manashjyotibora122@gmail.com)
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<!-- ═══════════════════ GITHUB ANALYTICS ═══════════════════ -->
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-![Streak](https://streak-stats.demolab.com/?user=Manashjyoti-Bora&theme=tokyonight&hide_border=true&background=0f172a&stroke=3b82f6&ring=3b82f6&fire=38bdf8&currStreakLabel=3b82f6&sideLabels=e2e8f0)
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Manashjyoti-Bora&theme=tokyonight" width="100%" alt="Profile Details"/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Manashjyoti-Bora&theme=tokyonight" width="32%" alt="Top Languages by Repo"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Manashjyoti-Bora&theme=tokyonight" width="32%" alt="Most Commit Language"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Manashjyoti-Bora&theme=tokyonight&utcOffset=5.5" width="32%" alt="Productive Time"/>
-
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Manashjyoti-Bora&theme=tokyo-night&hide_border=true&bg_color=0f172a&color=3b82f6&line=38bdf8&point=e2e8f0&area=true)
-
-### 🗓️ Contribution Heatmap
-
-<img src="https://ghchart.rshah.org/3b82f6/Manashjyoti-Bora" width="100%" alt="Contribution heatmap"/>
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<!-- ═══════════════════ OPEN SOURCE + LEARNING ═══════════════════ -->
-
-## 🌱 Open Source & Current Learning
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🔓 Open Source
-- 💯 **100% of my project code is public** — every repo open, documented and clickable
-- 🧹 Professional Git hygiene: meaningful commits, clean history, README-first repos
-- 🎯 **Goal:** first external open-source contributions in 2026 — starting with docs and good-first-issues in the React/Next.js ecosystem
-
-</td>
-<td width="50%" valign="top">
-
-### 📚 Learning Roadmap
-- ✅ HTML/CSS/JS fundamentals → React → Next.js + TypeScript *(done, shipped)*
-- 🔄 **Now:** Node.js backends, system design, performance optimization
-- 🎯 **Next:** Testing (Jest/Playwright), Docker basics, PostgreSQL
-- 🏁 **Goal:** Production-ready full-stack engineer
-
-</td>
-</tr>
-</table>
-
-## 🏆 Milestones & Achievements
-
-| Year | Achievement |
-|---|---|
-| 🚀 2026 | Launched **AUREA** — full Next.js 14 + TypeScript + GSAP portfolio, engineered **entirely from an Android phone** (Termux + Git + Vercel) |
-| 🛒 2026 | Shipped **NexusMart** — full-stack e-commerce LIVE: Node.js APIs, MongoDB Atlas, JWT auth, admin panel |
-| 💼 2026 | Built **DevHire Pro ATS** & **TaskFlow** with React 19 |
-| 🌐 2025 | First deployed website — hand-coded vanilla HTML/CSS/JS on GitHub Pages |
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<!-- ═══════════════════ PHILOSOPHY + SERVICES ═══════════════════ -->
-
-## 💡 Development Philosophy
-
-<div align="center">
-
-| 🧹 Clean Code | 🏗️ Scalable Architecture | ⚡ Performance First | ♿ Accessibility |
-|:---:|:---:|:---:|:---:|
-| *Self-documenting, modular — if a teammate can't read it, it isn't done* | *Data modeled before UI; components composed, never duplicated* | *Animate transforms only, measure with Lighthouse, mobile-first* | *Keyboard nav, reduced-motion, semantic HTML — by default* |
-
-| 📱 Responsive Design | 🎨 User Experience | 📖 Continuous Learning | ✅ Best Practices |
-|:---:|:---:|:---:|:---:|
-| *Every layout starts at 360px — most of India browses on phones* | *Loading, empty & error states designed first* | *Ship something new every week, learn in public* | *Typed code, meaningful commits, deployed proof* |
-
-</div>
-
-## 🤝 What I Can Do For You
-
-`Frontend Development` · `Full Stack Development` · `Responsive Websites` · `UI Implementation (Figma → Code)` · `API Integration` · `Performance Optimization`
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<!-- ═══════════════════ RECRUITER SECTION ═══════════════════ -->
-
-## 🎯 For Recruiters — Quick Facts
-
-<div align="center">
-
-| | |
-|---|---|
-| 💼 **Seeking** | Software Developer / Full-Stack / Frontend **Internship & Junior Roles** |
-| ⏰ **Availability** | **Immediately available** |
-| 🌍 **Work Mode** | Remote-ready ✅ · Hybrid · On-site (Assam/India) |
-| 🕐 **Time Zone** | IST (UTC+5:30) — flexible overlap with global teams |
-| 🤝 **Collaboration** | Git/GitHub workflow, code reviews, agile-friendly |
-| ⚡ **Response Time** | Within 24 hours, every time |
-
-[![Resume Download](https://img.shields.io/badge/📄_RESUME-Download_PDF-ef4444?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://manashjyoti-bora.vercel.app/resume.pdf)
-[![Resume Preview](https://img.shields.io/badge/👀_RESUME-Preview_Online-8b5cf6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://manashjyoti-bora.vercel.app/resume.pdf)
-
-### 🌐 Portfolio — My Work, Live
-
-[![Visit Portfolio](https://img.shields.io/badge/🚀_VISIT_LIVE_PORTFOLIO-manashjyoti--bora.vercel.app-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://manashjyoti-bora.vercel.app)
-[![Portfolio Source](https://img.shields.io/badge/📂_VIEW_SOURCE_CODE-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Manashjyoti-Bora/portfolio-website)
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<!-- ═══════════════════ CONTACT ═══════════════════ -->
-
-## 📬 Let's Connect
-
-<div align="center">
-
-[![Email](https://img.shields.io/badge/📧_manashjyotibora122@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:manashjyotibora122@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Manashjyoti_Bora-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manashjyoti-bora-323b97405)
-[![GitHub](https://img.shields.io/badge/🐙_GitHub-Manashjyoti--Bora-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Manashjyoti-Bora)
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Live_Site-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://manashjyoti-bora.vercel.app)
-
-<!-- ═══════════════════ FUN + QUOTE ═══════════════════ -->
-
-### ✨ Daily Dev Wisdom
-
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
-
-**💭 "Ship real things. Learn in public. Every project deployed, every line on GitHub."**
-
-<br/>
-
-**🙏 Thanks for visiting!** If my work resonates, let's talk — the fastest way is [email](mailto:manashjyotibora122@gmail.com).
-
-![Last Updated](https://img.shields.io/badge/Last_Updated-July_2026-3b82f6?style=flat-square&labelColor=0f172a)
-![Made with](https://img.shields.io/badge/Made_with-❤️_&_Markdown-ef4444?style=flat-square&labelColor=0f172a)
-![License](https://img.shields.io/badge/©_2026-Manashjyoti_Bora-6366f1?style=flat-square&labelColor=0f172a)
-
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:020617,50:3b82f6,100:06b6d4&height=130&section=footer)
+⭐ **Star this repo if it helped you!**
 
 </div>
