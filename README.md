@@ -141,3 +141,5 @@ Sign up on the live site with the email set in `ADMIN_EMAIL` → a **🔧 Admin*
 
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:0f766e,100:10b981&height=100&section=footer)
+
+<!-- v1.0.0 -->
