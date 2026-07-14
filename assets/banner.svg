@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 240" width="1180" height="240" role="img" aria-label="AUREA — interactive portfolio banner">
+<defs>
+<linearGradient id="ag" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#8b5cf6"><animate attributeName="stop-color" values="#8b5cf6;#d946ef;#8b5cf6" dur="6s" repeatCount="indefinite"/></stop>
+  <stop offset="100%" stop-color="#d946ef"><animate attributeName="stop-color" values="#d946ef;#8b5cf6;#d946ef" dur="6s" repeatCount="indefinite"/></stop>
+</linearGradient>
+<filter id="agl"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<clipPath id="ac"><rect width="1180" height="240" rx="18"/></clipPath>
+</defs>
+<g clip-path="url(#ac)">
+<rect width="1180" height="240" fill="#0f0524"/>
+<g fill="#a78bfa">
+  <circle r="2" opacity="0.6"><animateMotion path="M 80 220 C 300 120 500 200 760 80 S 1100 60 1160 30" dur="14s" repeatCount="indefinite"/></circle>
+  <circle r="1.5" opacity="0.5"><animateMotion path="M 1120 200 C 900 90 600 190 380 70 S 120 100 40 40" dur="18s" repeatCount="indefinite"/></circle>
+  <circle r="2.4" opacity="0.5" fill="#d946ef"><animateMotion path="M 40 40 C 350 160 700 40 950 170 S 1150 200 1170 210" dur="21s" repeatCount="indefinite"/></circle>
+</g>
+<text x="90" y="150" font-family="Arial Black,Arial" font-weight="900" font-size="92" fill="none" stroke="url(#ag)" stroke-width="2.5" stroke-dasharray="900" stroke-dashoffset="900" filter="url(#agl)">AUREA<animate attributeName="stroke-dashoffset" values="900;0" dur="2.6s" fill="freeze"/></text>
+<text x="90" y="150" font-family="Arial Black,Arial" font-weight="900" font-size="92" fill="url(#ag)" opacity="0">AUREA<animate attributeName="opacity" values="0;0.22" begin="2.4s" dur="0.8s" fill="freeze"/></text>
+<text x="92" y="188" font-family="monospace" font-size="17" fill="#94a3b8" opacity="0">an interactive portfolio that fights back<animate attributeName="opacity" values="0;1" begin="2.8s" dur="0.6s" fill="freeze"/></text>
+<g font-family="monospace" font-size="15">
+  <rect x="640" y="52" width="460" height="140" rx="10" fill="#160a33" stroke="#312e81"/>
+  <circle cx="662" cy="72" r="5" fill="#ef4444"/><circle cx="680" cy="72" r="5" fill="#f59e0b"/><circle cx="698" cy="72" r="5" fill="#22c55e"/>
+  <text x="662" y="105" fill="#94a3b8" opacity="0">$ npm run dev<animate attributeName="opacity" values="0;1" begin="0.6s" dur="0.3s" fill="freeze"/></text>
+  <text x="662" y="130" fill="#a78bfa" opacity="0">▲ Next.js 14 — ready in 1.2s<animate attributeName="opacity" values="0;1" begin="1.4s" dur="0.3s" fill="freeze"/></text>
+  <text x="662" y="155" fill="#22d3ee" opacity="0">hint: press Ctrl+K inside ✨<animate attributeName="opacity" values="0;1" begin="2.2s" dur="0.3s" fill="freeze"/></text>
+  <rect x="662" y="164" width="10" height="16" fill="#d946ef"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
+</g>
+<rect x="0" y="234" width="1180" height="6" fill="url(#ag)"><animate attributeName="width" values="0;1180" dur="2.6s" fill="freeze"/></rect>
+</g>
+<rect x="1" y="1" width="1178" height="238" rx="18" fill="none" stroke="url(#ag)" stroke-width="1.4" opacity="0.6"/>
+</svg>
